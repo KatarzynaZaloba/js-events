@@ -1,8 +1,9 @@
-const button = document.querySelector(".js-button");
+const buttons = document.querySelectorAll(".js-button");
 
 const hello = (event) => {
-    console.log(event.target);
     console.log("Cześć!");
 };
 
-button.addEventListener("click" , hello);
+for (const button of buttons) {
+    button.addEventListener("click" , hello);
+}
