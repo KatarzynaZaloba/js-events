@@ -1,7 +1,9 @@
 const buttons = document.querySelectorAll(".js-button");
 
 const hello = (event) => {
-    console.log("Cześć!");
+const name = event.target.innerText;
+
+    console.log(`Cześć ${name}!`);
 };
 
 for (const button of buttons) {
