@@ -1,4 +1,4 @@
-const buttons = document.querySelectorAll(".js-button");
+const section = document.querySelector(".js-section");
 
 const hello = (event) => {
 const name = event.target.innerText;
@@ -6,6 +6,4 @@ const name = event.target.innerText;
     console.log(`Cześć ${name}!`);
 };
 
-for (const button of buttons) {
-    button.addEventListener("click" , hello);
-}
+section.addEventListener("click" , hello);
