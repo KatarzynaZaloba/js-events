@@ -1,7 +1,9 @@
-const hello =() => {
+const button = document.querySelector(".js-button");
+
+const hello = () => {
     console.log("Cześć!");
 };
 
-const button = document.querySelector(".js-button");
+button.addEventListener("click" , hello);
 
-button.onclick = hello;
+button.removeEventListener("click", hello);
